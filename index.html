@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+
+      <div class="hamburger-menu site-title">
+        <img src="images\icon-menu.svg" class="hamburger" alt="">
+        <h1>sneakers</h1>
+      </div>
+
+
+      <nav class="menu">
+        <div class="side-menu">
+          <img src="images\icon-close.svg" class="closebtn" alt="">
+          <ul>
+            <li class=" collections"><a href="#"> Collections</a></li>
+            <li class="men"><a href="#">Men</a> </li>
+            <li class="women"><a href="#">Women</a></li>
+            <li class="about"><a href="#"> About</a></li>
+            <li class="contact"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="user-cart">
+        <img src="images\icon-cart.svg" alt="" height="20px" width="22px" class="cart">
+        <div class="cart-count">3</div>
+        <img src="images\image-avatar.png" width="25" class="avatar" alt="" srcset="">
+      </div>
+      <div class="cart-window">
+        <div class="cart-heading">Cart</div>
+        <hr>
+        <div class="productsincart">
+          <div class="items">
+            <img src="images\image-product-1.jpg" class="item-image" alt="" srcset="">
+            <div class="item-description">
+              <p class="item-image-description">Autumn Limited Edition...</p>
+              <div class="item-image-price">
+                <div class="item-price">$125.00</div>
+                <img src="images\icon-close.svg" class="into" alt="">
+                <div class="total-quantity">3</div>
+                <div class="totalPrice">$375.00</div>
+              </div>
+
+
+            </div> <img src="images\icon-delete.svg" alt="" class="delete">
+          </div>
+          <div class="checkout">Checkout</div>
+
+        </div>
+        <div class="emptycart"> Your cart is empty</div>
+
+      </div>
+    </header>
+
+    <hr>
+
+    <main>
+      <div class="main-body">
+        <div class="slideshow-container ">
+          <!-- --full width images-- -->
+          <div class="  ">
+            <div class=" prod-img">
+              <img src="images\image-product-1.jpg" class="mySlides product-image prod-img1 common-img" alt=""
+                srcset="">
+              <img src="images\image-product-2.jpg" class="mySlides product-image prod-img2 common-img" alt=""
+                srcset="">
+              <img src="images\image-product-3.jpg" class="mySlides product-image prod-img3 common-img" alt=""
+                srcset="">
+              <img src="images\image-product-4.jpg" class="mySlides product-image prod-img4 common-img" alt=""
+                srcset="">
+            </div>
+            <div class="thumbnail-images">
+              <img src="images\image-product-1-thumbnail.jpg" alt="" class="thumbnail-image thumImg1">
+              <img src="images\image-product-2-thumbnail.jpg" alt="" class="thumbnail-image thumImg2">
+              <img src="images\image-product-3-thumbnail.jpg" alt="" class="thumbnail-image thumImg3">
+              <img src="images\image-product-4-thumbnail.jpg" alt="" class="thumbnail-image thumImg4">
+
+            </div>
+          </div>
+
+
+
+
+
+
+
+          <!-- next and previous images -->
+          <a class="prev nextprevbtn">&#10094;</a>
+          <a class=" next nextprevbtn">&#10095;</a>
+          <div style=" text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+
+        </div>
+        <br>
+        <!-- dots and circles -->
+
+
+        <!-- product discription -->
+        <div class="product-description">
+          <p class="company-name">SNEAKER COMPANY</p>
+          <h1 class="main-heading">Fall Limited Edition Sneakers</h1>
+          <p class="main-heading-para">These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+          <div class="price-section">
+            <div class="recent-price">$125.00</div>
+            <div class="discount">50%</div>
+            <div class="old-price"> $250.00</div>
+          </div>
+          <div class="desktop-flex">
+            <div class="addbtns">
+              <img src="images\icon-minus.svg" class="minus" alt="">
+              <div class="quantity">0</div>
+              <img src="images\icon-plus.svg" class="plus" alt="">
+            </div>
+
+            <div>
+              <button class="add-to-cart"><img src="images\icon-cart.svg" alt="">
+                <span class="btntext"> Add to cart</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="overlay hidden">
+          <svg class="lightboxclosebtn" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+              fill="#69707D" fill-rule="evenodd" />
+          </svg>
+        
+          <a class="overlay-next-prev overlay-prev">&#10094;</a>
+          <a class=" overlay-next-prev overlay-next">&#10095;</a>
+
+
+          <div class="lightbox  ">
+            <div class=" lightbox-prod-img">
+              <img src="images\image-product-1.jpg" class=" display-prod-image lightbox-img1 light-prd-imgs" alt=""
+                srcset="">
+              <img src="images\image-product-2.jpg" class="hidden display-prod-image lightbox-img2 light-prd-imgs"
+                alt="" srcset="">
+              <img src="images\image-product-3.jpg" class="hidden display-prod-image lightbox-img3 light-prd-imgs"
+                alt="" srcset="">
+              <img src="images\image-product-4.jpg" class="hidden display-prod-image lightbox-img4 light-prd-imgs"
+                alt="" srcset="">
+            </div>
+
+            <div class="lightbox-thumbnail-images">
+              <img src="images\image-product-1-thumbnail.jpg" alt="" class="lightbox-thum-img1 lightbox-thum-img">
+              <img src="images\image-product-2-thumbnail.jpg" alt="" class="lightbox-thum-img2 lightbox-thum-img">
+              <img src="images\image-product-3-thumbnail.jpg" alt="" class="lightbox-thum-img3 lightbox-thum-img">
+              <img src="images\image-product-4-thumbnail.jpg" alt="" class="lightbox-thum-img4 lightbox-thum-img">
+            </div>
+          </div>
+
+
+          <!--  -->
+          <!-- <div class=" fade ">
+          
+            
+          </div> -->
+
+        </div>
+
+      </div>
+
+
+
+    </main>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script src="ecom.js"></script>
+</body>
+
+</html>
